@@ -82,5 +82,5 @@ const markup = images.map(image => {
 }).join("");
 ul.insertAdjacentHTML("beforeend", markup);
 
-let gallery = new SimpleLightbox('.gallery a');
+let gallery = new SimpleLightbox('.gallery a',{captionsData: 'alt',captionDelay: 250});
 gallery.refresh();

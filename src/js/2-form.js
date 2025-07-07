@@ -11,10 +11,6 @@ function saveData(event) {
     formData.email = event.currentTarget.elements.email.value.trim();
     formData.message = event.currentTarget.elements.message.value.trim();
 
-    if (formData.email === "" || formData.message === "") {
-        return;
-    };
-
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 };
 
@@ -34,4 +30,7 @@ const savedData = localStorage.getItem("feedback-form-state");
         const parsed = JSON.parse(savedData);
         form.elements.email.value = parsed.email;
         form.elements.message.value = parsed.message;
+
+        formData.email = parsed.email;
+        formData.message = parsed.message;
     };

@@ -6,5 +6,5 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                
       alt="${a}"
     />
   </a>
-</li>`}).join("");n.insertAdjacentHTML("beforeend",c);let r=new t(".gallery a");r.refresh();
+</li>`}).join("");n.insertAdjacentHTML("beforeend",c);let r=new t(".gallery a",{captionsData:"alt",captionDelay:250});r.refresh();
 //# sourceMappingURL=1-gallery.js.map
